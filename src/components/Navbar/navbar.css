@@ -1,0 +1,33 @@
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #0056d2;
+}
+
+nav div {
+    width: 250px;
+    margin: 30px;
+    border: 1px red solid;
+}
+
+.nav-div-child-1{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.nav-div-child-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    size: 2em;
+}
+
+.nav-div-child-3{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
