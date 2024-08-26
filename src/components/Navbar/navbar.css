@@ -1,33 +1,44 @@
-nav {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.header{
+    font-family: "Poppins", sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
     background-color: #0056d2;
-}
-
-nav div {
-    width: 250px;
-    margin: 30px;
-    border: 1px red solid;
-}
-
-.nav-div-child-1{
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
     align-items: center;
+    z-index: 100;
 }
 
-.nav-div-child-2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #FFF;
-    size: 2em;
+.logo{
+    font-size: 32px;
+    color: #fff;
+    font-weight: 700;
 }
 
-.nav-div-child-3{
-    display: flex;
-    justify-content: end;
-    align-items: center;
+.navbar a{
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navbar a::before{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: .3s;
+}
+
+.navbar a:hover::before{
+    width: 100%;
 }

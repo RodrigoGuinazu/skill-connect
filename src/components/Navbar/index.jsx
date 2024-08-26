@@ -1,23 +1,21 @@
-import './navbar.css'
-import { FaBars } from "react-icons/fa"
-import { FaCartShopping } from "react-icons/fa6";
-
+import './Navbar.css'
 
 function Index(){
-
     return(
         <>
-            <nav>
-                <div className='nav-div-child-1'>
-                    <FaBars size="2em" color='#FFF' />
-                </div>
-                <div className='nav-div-child-2'>
+            <header className="header">
+                <a href="" className="logo">
                     Skill Connect
-                </div>
-                <div className='nav-div-child-3'>
-                    <FaCartShopping size="2em" color='#FFF'/>
-                </div>
-            </nav>
+                </a>
+
+                <nav className="navbar">
+                    <a href="/">Cursos</a>
+                    <a href="/">Categorias</a>
+                    <a href="/">Profesores</a>
+                    <a href="/">About</a>
+                    <a href="/">Log In</a>
+                </nav>
+            </header>
         </>
     )
 }
